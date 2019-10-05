@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Cohen-Sutherland's Outcode Algorithm</title>
+        <link rel="shortcut icon" href="../shared/icons/cyan.ico">
+        <link href="../shared/css/reset.css" rel="stylesheet" type="text/css">
+        <link href="../shared/css/floating_button.css" rel="stylesheet" type="text/css">
+        <link href="../shared/css/layout.css" rel="stylesheet" type="text/css">
+        <link href="../shared/css/github.css" rel="stylesheet" type="text/css">
+        <link href="./style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <main>
+            <div class="elevated">
+                <header>
+                    <a title="Back to previews" class="button_toolbar close" id="button_close" href=".."></a>
+                    <button title="Clear Canvas" class="button_toolbar clear" id="button_clear"></button>
+                    <div class="title">Cohen-Sutherland's Outcode Algorithm</div>
+                </header>
+                <canvas id="canvas"></canvas>
+            </div>
+            <div class="buttons">
+                <button id="button_line" class="button_control button_line">Line</button>
+                <button id="button_rectangle" class="button_control button_rectangle">Rectangle</button>
+                <div class="divider"></div>
+                <button id="button_clip" class="button_control button_clip">Clip Lines</button>
+                <button id="button_unclip" class="button_control button_unclip">Unclip Lines</button>
+            </div>
+        </main>
+        <a class="button_floating back" href="../Lab3-FloodFill" title="Flood Fill Algorithms"></a>
+        <a class="button_floating forward" href="../Lab5-Sutherland-Hodgman" title="Sutherland-Hodgman's Polygon Clipping Algorithm"></a>
+        <script src="../shared/scripts/polyfills.js"></script>
+        <script src="../shared/lib/jquery.min.js"></script>
+        <script src="./classes/RenderArray.js"></script>
+        <script src="./classes/CohenSutherlandCanvas.js"></script>
+        <script src="./classes/Brush.js"></script>
+        <script src="../shared/scripts/shared.js"></script>
+        <script src="./script.js"></script>
+        <script src="../shared/scripts/transition.js"></script>
+    </body>
+</html>
